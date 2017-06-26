@@ -1,0 +1,22 @@
+<div class="row shift-up"> 
+  <ba-card id="positioning" class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-12" title="Calendario de citas"
+           baCardClass="xmedium-card feed-comply-panel with-scroll calendar-panel" >
+    <calendar id="odontoCalendar"></calendar>
+  </ba-card>
+  <div> 
+    <div class="alert alert-danger" id="alert" role="alert">
+      <strong>Nota!</strong> Ten en cuenta que la eliminación de una cita ya asignada puede <br> tener
+      implicaciones en futuras reservaciones 
+    </div>   
+    <div>    
+      <button data-toggle="popover" data-container="body" data-placement="top" data-content="justin castillo"
+      type="button" id="deleteBtn" (click)="onDeleteBtnClick()" class="btn btn-danger">Eliminar cita más próxima      
+      </button>
+    </div>
+    <!-- EL SIGUIENTE ES UN EJEMPLO DE COMO UTILIZAR PLANTILLAS PERSONALIZADAS DENTRO DEL HTML -->
+    <!--<ng-template #popContent> <button type="button" class="btn btn-danger">Proof</button></ng-template>
+    <button type="button" class="btn btn-secondary" [ngbPopover]="popContent" popoverTitle="Fancy content">
+      I've got markup and bindings in my popover!
+    </button>-->
+  </div>
+</div>
