@@ -11,10 +11,11 @@ export class CalendarService {
 
     let dashboardColors = this._baConfig.get().colors.dashboard;
     return {
+      locale: 'es',
       header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'month,agendaWeek,agendaDay'
+        right: 'month,agendaWeek,agendaDay',
       },
       defaultDate: '2016-03-08',
       selectable: true,
