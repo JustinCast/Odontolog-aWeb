@@ -6,8 +6,6 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { Dashboard } from './dashboard.component';
 import { routing } from './dashboard.routing';
-
-import { Feed } from './feed';
 import { Todo } from './todo';
 import { Calendar } from './calendar';
 import { CalendarService } from './calendar/calendar.service';
@@ -20,17 +18,15 @@ import { TodoService } from './todo/todo.service';
     FormsModule,
     AppTranslationModule,
     NgaModule,
-    routing
+    routing,
   ],
   declarations: [
-
-    Feed,
     Todo,
     Calendar,
-    Dashboard
+    Dashboard,
   ],
   providers: [
     CalendarService,
-  ]
+  ],
 })
 export class DashboardModule { }
